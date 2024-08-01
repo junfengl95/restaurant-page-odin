@@ -1,3 +1,5 @@
+import './styles/about.css'
+
 function loadAbout(){
     const content = document.createElement('div');
 

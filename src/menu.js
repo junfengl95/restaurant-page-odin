@@ -2,7 +2,6 @@ import './styles/menu.css'
 
 function loadMenu(){
     const content = document.createElement('div');
-    content.id = 'content';
 
     const headline = document.createElement('h1');
     headline.textContent = 'Menu';

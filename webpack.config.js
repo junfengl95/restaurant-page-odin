@@ -8,7 +8,10 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    devtool: 'inline-source-map',
+    devtool: 'eval-source-map',
+    devServer: {
+        watchFiles: ["./src/index.html"],
+    },
     plugins: [
         new HtmlWebpackPlugin({
           template: './src/index.html',
@@ -26,8 +29,8 @@ module.exports = {
             }
         ],
     },
-    devServer: {
-        static: './dist',
-    },
+    // devServer: {
+    //     static: './dist',
+    // },
     
 };
